@@ -16,7 +16,7 @@ describe('Home Page', () => {
   it('renders the main heading', () => {
     render(<Home />);
 
-    const heading = screen.getByText('TP 7 - Plan de desarrollo y mantenimiento');
+    const heading = screen.getByText('TP 7 - Plan de desarrollo y mantenimiento. HOT FIX');
     expect(heading).toBeInTheDocument();
   });
 
