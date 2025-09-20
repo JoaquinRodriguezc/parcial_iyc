@@ -36,7 +36,7 @@ jobs:
         run: npm run format:check
 
   unit-tests:
-    name: Unit Tests
+    name: Test unitarios
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -57,7 +57,7 @@ jobs:
         run: npm run test:ci
 
   integration-tests:
-    name: Integration Tests
+    name: Test de integracion
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -75,8 +75,7 @@ jobs:
         run: npm ci
 
       - name: Run integration tests
-        run: npm run test:ci -- --testPathPattern=integration
-
+        run: npm run test:integration
   build:
     name: Build Verification
     runs-on: ubuntu-latest
