@@ -12,7 +12,7 @@ env:
 
 jobs:
   lint:
-    name: Calidad de codigo y linting
+    name: Linting
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -31,9 +31,6 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
-
-      - name: Check code formatting
-        run: npm run format:check
   format:
     name: Formato de codigo
     runs-on: ubuntu-latest
